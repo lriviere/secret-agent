@@ -41,7 +41,6 @@ li, a {
   font-size: 1rem;
   padding: 0.66rem 0 0.66rem 0;
 
-
 }
 
 .main-banner {
@@ -51,17 +50,20 @@ li, a {
   background-position: center;
   background-repeat: no-repeat;
   height: 25rem;
+  width: 100%;
+  margin: auto;
+
 
 }
 
 .main-title {
   border: 1px solid gray;
   background: black;
-
-  margin-top: 9rem;
-  max-width: 20rem;
+  margin: 9rem 0;
+  width: 20rem;
   padding: 2rem 3rem;
   font-weight:bold;
+
 }
 
 .main-title h2 {
@@ -88,11 +90,6 @@ nav ul {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   list-style: none;
-}
-
-.nav {
-
-
 }
 
 
@@ -177,11 +174,48 @@ nav ul {
   .description { width: 35%;}
 
   .container li {display: none;}
+
   li.mobile {
     display: inline;
 }
   .container .mobile {
     margin: 0 auto;
   }
+
+  }
+
+
+  @media only screen and (max-width:470px) {
+
+    .main-banner {
+      height: 15rem;
+
+}
+
+  .main-banner {
+    border: 1px solid red;
+    width: 100%;
+  }
+
+    .main-title {
+      margin-top: 10rem;
+      width: 100%;
+      padding: 1rem 0rem;
+      height: auto;
+
+    }
+
+    .main-title h4 {
+      font-size: 0.77rem;
+
+    }
+
+    .main-title h2 {
+      font-size: 1rem;
+
+    }
+
+    .item { width: 90%; }
+    #watch {display: none;}
 
   }
